@@ -1,3 +1,4 @@
+<?php
 function cleanUrl($str, $replace = [], $separator = '-') {
 	if (!empty($replace)) {
         $str = str_replace((array)$replace, ' ', $str);
@@ -8,3 +9,4 @@ function cleanUrl($str, $replace = [], $separator = '-') {
     $clean = preg_replace("/[\/_|+ -]+/", $separator, $clean);
     return $clean;
 }
+?>
