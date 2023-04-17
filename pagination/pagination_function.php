@@ -1,3 +1,4 @@
+<?php
 // current page number
 function current_page() {
   if (isset($_GET['pageID']) && $_GET['pageID'] != '') {
@@ -124,3 +125,4 @@ global $mysqli;
 	$pagination .= next_page($totalPages, $urlDirPage);
 		return $pagination;
 }
+?>
