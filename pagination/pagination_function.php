@@ -1,4 +1,6 @@
 <?php
+require 'database.php';
+
 // current page number
 function current_page() {
   if (isset($_GET['pageID']) && $_GET['pageID'] != '') {
